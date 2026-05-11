@@ -2,8 +2,24 @@
 
 
 
-to run any terraform commend use:
-
+set up your real keys:
 ```bash
-terraform <commends> -backend-config=backend.conf
+cp backend-copy.conf backend.conf
 ```
+
+
+the asme key (or not) set up for the terraform.tfvars
+firs create one:
+```bash
+cp terraform-copy.tfvars terraform.tfvars
+```
+
+
+
+to run init use:
+```bash
+terraform init -backend-config=backend.conf
+```
+
+
+
